@@ -1,0 +1,45 @@
+### Start server
+# Primeiro execute: npm run dev
+
+### Criar gênero
+POST http://localhost:3333/generos
+Content-Type: application/json
+
+{
+  "nome": "Ação"
+}
+
+### Listar gêneros
+GET http://localhost:3333/generos
+
+### Criar plataforma
+POST http://localhost:3333/plataformas
+Content-Type: application/json
+
+{
+  "nome": "PC"
+}
+
+### Listar plataformas
+GET http://localhost:3333/plataformas
+
+### Criar jogo
+POST http://localhost:3333/jogos
+Content-Type: application/json
+
+{
+  "titulo": "Jogo Exemplo",
+  "idGenero": 1,
+  "plataformaIds": [1]
+}
+
+### Listar jogos
+GET http://localhost:3333/jogos
+
+### Relacionar jogo com plataformas
+POST http://localhost:3333/jogos/1/plataformas
+Content-Type: application/json
+
+{
+  "plataformaIds": [1]
+}

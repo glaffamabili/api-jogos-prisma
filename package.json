@@ -1,0 +1,23 @@
+{
+  "name": "api-jogos-prisma",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "prisma": "prisma"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.8.0",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.14.2",
+    "prisma": "^5.8.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.4"
+  }
+}
